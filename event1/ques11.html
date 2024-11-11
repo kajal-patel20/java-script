@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">see the magic</h1>
+    <div style="height: 1000px;">just to scroll the page</div>
+    <script>
+        let a=document.getElementById('title');
+        window.addEventListener('scroll',function(){
+            a.style.color='purple';
+        });
+    </script>
+</body>
+</html>

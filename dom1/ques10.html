@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            color: white;
+            background-color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    function addHighlightClass(){
+        let a=document.getElementsByTagName('h1');
+        for(let i =0;i<a.length;i++){
+            a[i].classList.add('highlight');
+        }
+    }
+</script>
+<h1>no one is real</h1>
+<h1>everyone is fake</h1>
+<h1>no one values here</h1>
+<button onclick="addHighlightClass()">highlight the elements</button>
+</body>
+</html>

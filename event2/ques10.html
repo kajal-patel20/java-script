@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">hello guys this is kajal patel</p>
+    <script>
+        let a=document.getElementById('para');
+        document.addEventListener('keydown',function(b){
+            if (b.key >='A' && b.key <='Z' || b.key >='a' && b.key <='z'){
+                a.textContent ='pressed: '+ b.key;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function updateDescription(){
+        let a=document.getElementsByClassName('des');
+        for (let i=0;i<a.length;i++){
+            a[i].innerHTML="mai hun kajal"
+        }
+    }
+</script>
+<p class="des">hello</p>
+<p class="des">My Name is Kajal</p>
+<p class="des">to kaise hai aap log</p>
+<button onclick="updateDescription()">Update</button>
+</body>
+</html>

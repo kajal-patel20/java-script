@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove last child</title>
+</head>
+<body>
+    <script>
+        function removelastchild(){
+            let a=document.getElementById('family');
+            if (a.lastElementChild){
+                a.removeChild(a.lastElementChild);
+            }
+        }
+    </script>
+<ul id="family">
+    <li>papa</li>
+    <li>mummy</li>
+    <li>didi</li>
+    <li>bhai</li>
+    <li>mai</li>
+</ul>
+<button onclick="removelastchild()">remove last one</button>
+</body>
+</html>

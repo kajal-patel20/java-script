@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #colorBox{
+        width: 100px;
+        height: 100px;
+        background-color: palevioletred;
+        border: 1px;
+    }
+</style>
+</head>
+<body>
+<div id="colorbox">hello guyss</div>
+<script>
+        let a=document.getElementById('colorbox');
+        a.onmouseover = function(){
+            a.style.backgroundColor='red';
+        };
+        a.onmouseout=function(){
+            a.style.backgroundColor='yellow'
+        };
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function togglevisblity(){
+        let a=document.getElementById('toggle-section');
+        if (a.style.display === 'none'|| a.style.display === ''){
+            a.style.display = 'block'
+        }
+        else{
+            a.style.display = 'none';
+        }
+    }
+</script>
+<div id="toggle-section" style="background-color: aqua; padding: 20px;">hello</div>
+<button onclick="togglevisblity()">toggle</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="my-list">
+        <li>to</li>
+        <li>kaise</li>
+        <li>hai</li>
+        <li>aap</li>
+    </ul>
+    <button id="changeText">click mee</button>
+    <script>
+        let a=document.getElementById('changeText');
+        let b=document.getElementsByTagName('li');
+        a.addEventListener('click',function(){
+            for (let i=0;i<b.length;i++){
+                b[i].textContent='new'+(i+1);
+            }
+        });
+    </script>
+</body>
+</html>

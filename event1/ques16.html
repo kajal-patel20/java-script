@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hiddendiv  {
+            display: none;
+            margin-top: 30px;
+            background-color: aquamarine;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="showbutton">click to show</button>
+    <div id="hiddendiv">this is a div which is hide</div>
+    <script>
+        let a=document.getElementById('showbutton');
+        let b=document.getElementById('hiddendiv');
+        a.addEventListener('click',function(){
+            b.style.display='block';
+        });
+    </script>
+</body>
+</html>

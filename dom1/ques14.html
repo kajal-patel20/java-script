@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function changefontsize(){
+        let a=document.getElementsByClassName('text');
+        for(let i=0;i<a.length;i++){
+            a[i].style.fontSize='24px';
+        }
+    }
+</script>
+<h1 class="text">Hey! I am happy</h1>
+<h1 class="text">Mai behad khush hun</h1>
+<button onclick="changefontsize()">click to change</button>
+</body>
+</html>

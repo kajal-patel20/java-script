@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="my-list">
+        <li>you</li>
+        <li>are</li>
+        <li>the</li>
+    </ul>
+    <button id="additembtn">click to add</button>
+    <script>
+        let a=document.getElementById('additembtn');
+        let b=document.getElementById('my-list');
+        a.addEventListener('click',function(){
+            let c =document.createElement('li');
+            c.textContent='best';
+            b.appendChild(c);
+        })
+
+    </script>
+</body>
+</html>

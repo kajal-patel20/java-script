@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #resize{
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        } 
+    </style>
+</head>
+<body>
+    <div id="resize"></div>
+    <script>
+        let a=document.getElementById('resize');
+        window.addEventListener('resize',function(){
+            a.style.width=(window.innerWidth)+'px';
+            a.style.height=(window.innerHeight)+'px';
+        });
+    </script>
+</body>
+</html>

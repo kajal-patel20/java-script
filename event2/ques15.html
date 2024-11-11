@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="enter something:">
+    <script>
+        let a=document.getElementById('textInput');
+        a.addEventListener('keydown',function(b){
+            if (b.key ==='Enter'){
+                console.log("enter was pressed");
+            }
+        });
+    </script>
+</body>
+</html>

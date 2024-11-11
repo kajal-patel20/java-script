@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="arrayDis">this is a current array</div>
+    <button id="addItem">click to add</button>
+    <script>
+        let array=[];
+        let a=document.getElementById('arrayDis');
+        let b=document.getElementById('addItem');
+        b.addEventListener('click',function(){
+            array.push(array.length+1);
+            a.textContent='current array';
+
+        });
+    </script>
+</body>
+</html>

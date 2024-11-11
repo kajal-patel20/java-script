@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>hey</h2>
+    <h2>this is</h2>
+    <h2>kajal</h2>
+    <button id="changeFont">click to change</button>
+    <script>
+        let a=document.getElementById('changeFont');
+        a.addEventListener('click',function(){
+            let b=document.querySelectorAll('h2');
+            b.forEach(function(b){
+                b.style.fontSize='30px';
+            });
+        })
+    </script>
+</body>
+</html>

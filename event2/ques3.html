@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #toggleDiv{
+            display: none;
+            padding: 20px;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton">click mee</button>
+    <div id="toggleDiv">this is my div guys</div>
+    <script>
+        let a=document.getElementById('toggleButton');
+        let b=document.getElementById('toggleDiv');
+        a.addEventListener('click',function(){
+            if(b.style.display === 'none' || b.style.display === '')
+            {
+                 b.style.display === 'block'
+            }
+            
+        });
+    </script>
+</body>
+</html>

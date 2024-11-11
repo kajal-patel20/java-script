@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: azure;
+
+        }
+        .active{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Kajal</div>
+    <div class="box">Patel</div>
+    <div class="box">Priya</div>
+    <script>
+        let a=document.querySelectorAll('.box');
+        for (var i=0;i<a.length;i++){
+            a[i].addEventListener('click',function(){
+                this.classlist.add('active');
+            });
+        }
+    </script>
+</body>
+</html>

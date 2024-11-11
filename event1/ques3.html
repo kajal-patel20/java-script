@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hoverDiv{
+            width: 60px;
+            height: 60px;
+            background-color: hotpink;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div id="hoverDiv">This is my box guyss</div>
+<script>
+    let a=document.getElementById('hoverDiv');
+    a.onmouseenter=function(){
+        console.log('mouse entered');
+    }
+</script>
+</body>
+</html>
